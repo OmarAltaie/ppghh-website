@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Friends of Nursing Research</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet"> <!-- Link to Google Font -->
+    <title>Partnership</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -11,7 +12,7 @@
             padding: 0;
         }
         header {
-            background-color: #e6f2ff;
+            background-color: #ffffff;
             text-align: center;
             padding: 20px 0;
         }
@@ -21,7 +22,8 @@
         .banner {
             background-color: #cee7f9;
             text-align: center;
-            padding: 50px 20px;
+            padding: 20px 10px;
+            font-family: 'sans-serif', 'sans-serif'; /* Use the Google Font */
         }
         .banner h1 {
             font-size: 2.5em;
@@ -74,6 +76,50 @@
         .footer-links {
             margin-bottom: 10px;
         }
+
+        .image-row {
+            display: flex; /* Use flexbox to place images side by side */
+            justify-content: center; /* Center the images horizontally */
+            gap: 20px; /* Add space between images */
+            margin-bottom: 20px; /* Add bottom margin */
+        }
+        
+        .uni-image {
+            width: 35%; /* Adjust the width to 25% of the container */
+            height: auto; /* Maintain the aspect ratio */
+            margin: 0 auto 20px auto; /* Centers the image horizontally and adds bottom margin */
+            justify-content: center; /* Center the images horizontally */
+        }
+        
+        .banner2 {
+            flex: 1;
+            background-color: #f2f2f2;
+            padding: 5px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            font-size: 1.25em; /* Increase the font size */
+        }
+        
+        .banner2 nav ul {
+            list-style-type: none;
+            padding: 0;
+            display: flex;
+            justify-content: space-between; /* This ensures the links are spread evenly */
+        }
+        
+        .banner2 nav ul li {
+            margin: 0 100px;
+        }
+        
+        .banner2 nav ul li a {
+            text-decoration: none;
+            color: #004466;
+            font-size: 1.2em;
+        }
+        
+        .banner2 nav ul li a:hover {
+            text-decoration: underline;
+        }
     </style>
 </head>
 <body>
@@ -86,26 +132,58 @@
     <h1>Our Partnerships</h1>
 </div>
 
+</div>
+<aside class="banner2">
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a  href="board.html">Board of Directors</a></li>
+            <li><a href="partnerships.html">Partnerships</a></li>
+            <li><a href="research.html">Research</a></li>
+            <li><a href="contactus.html">Contact Us</a></li>
+        </ul>
+    </nav>
+</aside>
+</div>
+
+
 <div class="content">
     <p>
-        Plymouth Psych Group: Our partnership with Plymouth Psych Group is based on expanding research opportunities in mental health, specifically focusing on Transcranial Magnetic Stimulation (TMS) treatments and its implications for different psychiatric conditions and patient populations. 
-
-        University of Minnesota School of Nursing: Our partnership with University of Minnesota School of Nursing focuses on creating training opportunities for future Nurse Practitioners who are currently enrolled in University of Minnesota programs. 
-        
-        Augsburg University: Our partnership with Augsburg University is aimed to create internship opportunities for students in the Physician Assistant programs. 
+    Plymouth Psych Group: Our partnership with Plymouth Psych Group is based on expanding research opportunities in mental health, specifically focusing on Transcranial Magnetic Stimulation (TMS) treatments and its implications for different psychiatric conditions and patient populations. 
     <p>
+
+    <p>
+    University of Minnesota School of Nursing: Our partnership with University of Minnesota School of Nursing focuses on creating training opportunities for future Nurse Practitioners who are currently enrolled in University of Minnesota programs. 
+    </p>
+</div>
+
+
+<div class="container">
+    <div class="content">
+        <div class="image-row">
+            <img src="logo.jpg" class="uni-image" alt="University">
+            <img src="uni.jpg" class="uni-image" alt="University">
+        </div>
+    </div>
 </div>
 
 <footer>
-    <div class="footer-links">
-        <a href="website.html">Home</a>
-        <a href="board.html">Board of Directors</a>
-        <a href="partnerships.html">Partnerships</a>
-        <a href="contactus.html">Contact Us</a>
+    <div class="footer-top">
+        <div class="footer-links">
+            <a href="website.html">Home</a>
+            <a href="privacy.html">Privacy Policy</a>
+            <a href="terms.html">Terms & Conditions</a>
+            <a href="accessibility.html">Accessibility Notice</a>
+            <a href="contactus.html">Contact Us</a>
+        </div>
     </div>
-    <div>
-        <a href="#"><img src="linkedin.png" alt="LinkedIn" width="30"></a>
-        <a href="#"><img src="twitter.png" alt="Twitter" width="30"></a>
+    <div class="footer-middle">
+        <p>Plymouth Psych Group, Plymouth, MN</p>
+        <p>Phone (appointments): 763-559-1640 ext. 117| Phone (general inquiries): 763-559-1640 ext. 117</p>
+        <p>Address: 9655 Schmidt Lake Road, Suite 150, Plymouth, MN 55442</p>
+    </div>
+    <div class="footer-bottom">
+        <p>© Copyright 2023 </p>   
     </div>
 </footer>
 
