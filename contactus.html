@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Friends of Nursing Research</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet"> <!-- Link to Google Font -->
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -11,7 +11,7 @@
             padding: 0;
         }
         header {
-            background-color: #e6f2ff;
+            background-color: #ffffff;
             text-align: center;
             padding: 20px 0;
         }
@@ -21,7 +21,8 @@
         .banner {
             background-color: #cee7f9;
             text-align: center;
-            padding: 50px 20px;
+            padding: 20px 10px;
+            font-family: 'sans-serif', 'sans-serif'; /* Use the Google Font */
         }
         .banner h1 {
             font-size: 2.5em;
@@ -31,10 +32,20 @@
             font-size: 1.5em;
             margin: 0;
         }
-        .content {
+
+        .content1 {
+            text-align: center; /* Centers the text horizontally */
+            margin: 0 auto; /* Centers the div itself horizontally if it has a set width */
+            padding: 20px; /* Optional: add some padding for better appearance */
+            font-size: 1.9em; /* Increase the font size */
+            font-weight: bold; /* Make the text bold */
+        }
+
+        .content2 {
             padding: 20px;
             max-width: 1200px;
             margin: 0 auto;
+            font-size: 1.5em; /* Increase the font size */
         }
         .content p {
             font-size: 1.1em;
@@ -74,6 +85,99 @@
         .footer-links {
             margin-bottom: 10px;
         }
+
+        .banner2 {
+            flex: 1;
+            background-color: #f2f2f2;
+            padding: 5px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            font-size: 1.25em; /* Increase the font size */
+        }
+        
+        .banner2 nav ul {
+            list-style-type: none;
+            padding: 0;
+            display: flex;
+            justify-content: space-between; /* This ensures the links are spread evenly */
+        }
+        
+        .banner2 nav ul li {
+            margin: 0 100px;
+        }
+        
+        .banner2 nav ul li a {
+            text-decoration: none;
+            color: #004466;
+            font-size: 1.2em;
+        }
+        
+        .banner2 nav ul li a:hover {
+            text-decoration: underline;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+        }
+        
+        .info-container {
+            display: flex;
+            justify-content: space-between;
+            margin: 0 auto;
+            max-width: 800px;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+        }
+        
+        .opening-hours, .contact-info {
+            flex: 1;
+            margin: 0 20px;
+        }
+        
+        .opening-hours h2, .contact-info h2 {
+            color: #5b9bd5;
+            font-size: 1.5em;
+            margin-bottom: 20px;
+        }
+        
+        .opening-hours p, .contact-info p {
+            margin: 10px 0;
+            line-height: 1.5;
+        }
+        
+        .opening-hours p {
+            display: flex;
+            justify-content: space-between;
+        }
+        
+        .phone a {
+            display: inline-block;
+            padding: 10px 20px;
+            border: 1px solid #5b9bd5;
+            border-radius: 5px;
+            text-decoration: none;
+            color: #5b9bd5;
+            font-size: 1.2em;
+        }
+        
+        .contact-info p a {
+            color: #5b9bd5;
+            text-decoration: none;
+        }
+        
+        .contact-info p a:hover {
+            text-decoration: underline;
+        }
+        
+
+        .white-space-row {
+            background-color: white; /* White background */
+            height: 50px; /* Adjust height as needed */
+            margin: 20px 0; /* Optional: margin to add space around the bar */
+        }
+        
     </style>
 </head>
 <body>
@@ -86,26 +190,68 @@
     <h1>Contact Us</h1>
 </div>
 
-<div class="content">
+</div>
+<aside class="banner2">
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a  href="board.html">Board of Directors</a></li>
+            <li><a href="partnerships.html">Partnerships</a></li>
+            <li><a href="research.html">Research</a></li>
+            <li><a href="contactus.html">Contact Us</a></li>
+        </ul>
+    </nav>
+</aside>
+</div>
+
+
+<div class="content1">
     <p>
-        The corporation’s registered office is located at: 9655 Schmidt Lake Road, #150
-        Plymouth, MN 55442
-        Phone number: 763-559-1640 ext. 117
-        The corporation’s mailing address is: PO Box 41532
-        Plymouth, MN 55441
+        Plymouth Psych Group Plymouth, MN Office
     <p>
 </div>
 
-<footer>
-    <div class="footer-links">
-        <a href="website.html">Home</a>
-        <a href="board.html">Board of Directors</a>
-        <a href="partnerships.html">Partnerships</a>
-        <a href="contactus.html">Contact Us</a>
+
+
+<div class="info-container">
+    <div class="opening-hours">
+        <h2>OPENING HOURS</h2>
+        <p>Monday<span>8:30 am - 5:00 pm</span></p>
+        <p>Tuesday<span>8:30 am - 5:00 pm</span></p>
+        <p>Wednesday<span>8:30 am - 5:00 pm</span></p>
+        <p>Thursday<span>8:30 am - 5:00 pm</span></p>
+        <p>Friday<span>8:30 am - 5:00 pm</span></p>
+        <p>Saturday<span>Closed</span></p>
+        <p>Sunday<span>Closed</span></p>
     </div>
-    <div>
-        <a href="#"><img src="linkedin.png" alt="LinkedIn" width="30"></a>
-        <a href="#"><img src="twitter.png" alt="Twitter" width="30"></a>
+    <div class="contact-info">
+        <h2>GET IN TOUCH</h2>
+        <p class="phone"><a href="tel:763-559-1640">📞 763-559-1640</a></p>
+        <p>9655 Schmidt Lake Road<br>Suite 150<br>Plymouth, MN 55442</p>
+        <p>fax: 763-559-1617</p>
+        <p><a href="mailto:info@plymouthpsychgroup.com">info@plymouthpsychgroup.com</a></p>
+    </div>
+</div>
+
+<div class="white-space-row"></div> 
+
+<footer>
+    <div class="footer-top">
+        <div class="footer-links">
+            <a href="website.html">Home</a>
+            <a href="privacy.html">Privacy Policy</a>
+            <a href="terms.html">Terms & Conditions</a>
+            <a href="accessibility.html">Accessibility Notice</a>
+            <a href="contactus.html">Contact Us</a>
+        </div>
+    </div>
+    <div class="footer-middle">
+        <p>Plymouth Psych Group, Plymouth, MN</p>
+        <p>Phone (appointments): 763-559-1640 ext. 117| Phone (general inquiries): 763-559-1640 ext. 117</p>
+        <p>Address: 9655 Schmidt Lake Road, Suite 150, Plymouth, MN 55442</p>
+    </div>
+    <div class="footer-bottom">
+        <p>© Copyright 2023 </p>   
     </div>
 </footer>
 
