@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Friends of Nursing Research</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet"> <!-- Link to Google Font -->
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -11,7 +11,7 @@
             padding: 0;
         }
         header {
-            background-color: #e6f2ff;
+            background-color: #ffffff;
             text-align: center;
             padding: 20px 0;
         }
@@ -21,8 +21,10 @@
         .banner {
             background-color: #cee7f9;
             text-align: center;
-            padding: 50px 20px;
+            padding: 20px 10px;
+            font-family: 'sans-serif', 'sans-serif'; /* Use the Google Font */
         }
+
         .banner h1 {
             font-size: 2.5em;
             margin: 0;
@@ -31,6 +33,15 @@
             font-size: 1.5em;
             margin: 0;
         }
+
+        .container {
+            display: flex;
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 20px;
+            flex-direction: row-reverse; /* Change the direction to row-reverse */
+        }
+
         .content {
             padding: 20px;
             max-width: 1200px;
@@ -40,6 +51,12 @@
             font-size: 1.1em;
             line-height: 1.6em;
         }
+
+        .content .highlight {
+            font-size: 1.9em; /* Increase the font size */
+            font-weight: bold; /* Make the text bold */
+        }
+
         .columns {
             display: flex;
             justify-content: space-between;
@@ -54,9 +71,11 @@
             box-shadow: 0 0 10px rgba(0,0,0,0.1);
             text-align: center;
         }
+
         .column h2 {
             font-size: 1.5em;
         }
+        
         .column p {
             font-size: 1.1em;
         }
@@ -74,6 +93,87 @@
         .footer-links {
             margin-bottom: 10px;
         }
+
+        .banner2 {
+            flex: 1;
+            background-color: #f2f2f2;
+            padding: 5px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            font-size: 1.25em; /* Increase the font size */
+        }
+        
+        .banner2 nav ul {
+            list-style-type: none;
+            padding: 0;
+            display: flex;
+            justify-content: space-between; /* This ensures the links are spread evenly */
+        }
+        
+        .banner2 nav ul li {
+            margin: 0 100px;
+        }
+        
+        .banner2 nav ul li a {
+            text-decoration: none;
+            color: #004466;
+            font-size: 1.2em;
+        }
+        
+        .banner2 nav ul li a:hover {
+            text-decoration: underline;
+        }
+
+        .banner3 {
+            flex: 1;
+            background-color: #f2f2f2;
+            padding: 5px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            font-size: 1.9em; /* Increase the font size */
+            font-weight: bold; /* Make the text bold */
+        }
+
+        /* SLIDE SHOW CODE */ 
+
+
+        .slideshow-container {
+            position: relative;
+            max-width: auto;
+            width: 100%;
+            height: 80%;
+            overflow: hidden;
+            padding-bottom: 100px;
+        }
+        .slides {
+            display: none;
+            width: 100%;
+        }
+        .active {
+            display: block;
+        }
+        .prev, .next {
+            cursor: pointer;
+            position: absolute;
+            top: 50%;
+            width: auto;
+            padding: 16px;
+            color: rgb(118, 161, 217);
+            font-weight: bold;
+            font-size: 180px;
+            transition: 0.6s ease;
+            border-radius: 0 3px 3px 0;
+            user-select: none;
+        }
+        .next {
+            right: 0;
+            border-radius: 3px 0 0 3px;
+        }
+        .prev:hover, .next:hover {
+            background-color: rgba(0, 0, 0, 0.8);
+        }
+
+
     </style>
 </head>
 <body>
@@ -87,22 +187,108 @@
     <p>Making a Difference</p>
 </div>
 
-<div class="content">
-    <p>
-        PPG Health and Healing Fund (PPGHH) is a non-profit organization established in 2023. The organization was founded to increase access to mental health services to underprivileged communities, expand the current scope of research in the field of mental health and provide educational opportunities for future mental health professionals. PPGHH aims to contribute to the ongoing movement of increasing equity in the field of mental health. With current and future partnerships with mental health and educational organizations, PPGHH strives to become a leading voice in matters of equity in mental health.     </p>
-    <p>
+
+</div>
+<aside class="banner2">
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a  href="board.html">Board of Directors</a></li>
+            <li><a href="partnerships.html">Partnerships</a></li>
+            <li><a href="research.html">Research</a></li>
+            <li><a href="contactus.html">Contact Us</a></li>
+        </ul>
+    </nav>
+</aside>
 </div>
 
-<footer>
-    <div class="footer-links">
-        <a href="website.html">Home</a>
-        <a href="board.html">Board of Directors</a>
-        <a href="partnerships.html">Partnerships</a>
-        <a href="contactus.html">Contact Us</a>
+<div class="content">
+    <p class="highlight">
+        PPG Health and Healing Fund (PPGHH) is a non-profit organization established in 2023. The organization was founded to increase access to mental health services to underprivileged communities, expand the current scope of research in the field of mental health and provide educational opportunities for future mental health professionals. PPGHH aims to contribute to the ongoing movement of increasing equity in the field of mental health. With current and future partnerships with mental health and educational organizations, PPGHH strives to become a leading voice in matters of equity in mental health.
+    </p>
+</div>
+
+
+
+</div>
+<aside class="banner3">
+    <nav>
+        <ul>
+            <p>
+                Our Projects
+            </p>
+        </ul>
+    </nav>
+</aside>
+</div>
+
+
+<div class="container">
+    <div class="content-row">
+        <div class="content">
+            <p class="highlight">
+                TMS Support Group 
+            </p>
+
+            <p>
+                At Health and Healing, we understand that undergoing Transcranial Magnetic Stimulation (TMS) treatment can be a transformative journey, both for patients and their families. That's why we offer a comprehensive support group dedicated to providing guidance and encouragement every step of the way. From initial consultations to post-treatment follow-ups, our support network offers a safe space for patients and their loved ones to share experiences, ask questions, and receive emotional support. Furthermore, we foster an environment where patients feel comfortable sharing directly with each other, providing a platform for mutual advice and support. Our compassionate team is here to address concerns, offer resources, and celebrate milestones, ensuring that individuals feel empowered and supported throughout their TMS journey. Join our community and let us walk alongside you as you embark on the path to improved mental wellness.      
+            </p>
+        </div>
     </div>
-    <div>
-        <a href="#"><img src="linkedin.png" alt="LinkedIn" width="30"></a>
-        <a href="#"><img src="twitter.png" alt="Twitter" width="30"></a>
+</div>
+
+
+
+<body>
+    <div class="slideshow-container">
+        <img class="slides active" src="Meeting.jpg" alt="Image 1">
+        <img class="slides" src="Hands1.jpg" alt="Image 2">
+        <img class="slides" src="Hand2.jpg" alt="Image 3">
+
+        <a class="prev" onclick="changeSlide(-1)">&#10094;</a>
+        <a class="next" onclick="changeSlide(1)">&#10095;</a>
+    </div>
+
+    <script>
+        let slideIndex = 0;
+
+        function showSlide(index) {
+            let slides = document.getElementsByClassName("slides");
+            if (index >= slides.length) { slideIndex = 0; }
+            if (index < 0) { slideIndex = slides.length - 1; }
+            for (let i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            slides[slideIndex].style.display = "block";
+        }
+
+        function changeSlide(n) {
+            showSlide(slideIndex += n);
+        }
+
+        // Initial display
+        showSlide(slideIndex);
+    </script>
+</body>
+
+
+<footer>
+    <div class="footer-top">
+        <div class="footer-links">
+            <a href="website.html">Home</a>
+            <a href="privacy.html">Privacy Policy</a>
+            <a href="terms.html">Terms & Conditions</a>
+            <a href="accessibility.html">Accessibility Notice</a>
+            <a href="contactus.html">Contact Us</a>
+        </div>
+    </div>
+    <div class="footer-middle">
+        <p>Plymouth Psych Group, Plymouth, MN</p>
+        <p>Phone (appointments): 763-559-1640 ext. 117| Phone (general inquiries): 763-559-1640 ext. 117</p>
+        <p>Address: 9655 Schmidt Lake Road, Suite 150, Plymouth, MN 55442</p>
+    </div>
+    <div class="footer-bottom">
+        <p>© Copyright 2023 </p>   
     </div>
 </footer>
 
