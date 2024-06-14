@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PPGH</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet"> <!-- Link to Google Font -->
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -11,7 +11,7 @@
             padding: 0;
         }
         header {
-            background-color: #e6f2ff;
+            background-color: #ffffff;
             text-align: center;
             padding: 20px 0;
         }
@@ -21,7 +21,8 @@
         .banner {
             background-color: #cee7f9;
             text-align: center;
-            padding: 50px 20px;
+            padding: 20px 10px;
+            font-family: 'sans-serif', 'sans-serif'; /* Use the Google Font */
         }
         .banner h1 {
             font-size: 2.5em;
@@ -31,11 +32,29 @@
             font-size: 1.5em;
             margin: 0;
         }
-        .content {
+
+        .container {
+            display: flex;
+            max-width: 1500px;
+            margin: 20 auto;
             padding: 20px;
-            max-width: 1200px;
-            margin: 0 auto;
+            flex-direction: column;
         }
+        
+        .content-row {
+            display: flex; /* Use flexbox to place content and image side by side */
+            justify-content: space-between; /* Space between content and image */
+            align-items: flex-start; /* Align items at the top */
+        }
+        
+        .content {
+            flex: 3;
+            padding-right: 20px;
+        }
+        
+
+
+
         .content p {
             font-size: 1.1em;
             line-height: 1.6em;
@@ -74,6 +93,50 @@
         .footer-links {
             margin-bottom: 10px;
         }
+
+        .banner2 {
+            flex: 1;
+            background-color: #f2f2f2;
+            padding: 5px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            font-size: 1.25em; /* Increase the font size */
+        }
+        
+        .banner2 nav ul {
+            list-style-type: none;
+            padding: 0;
+            display: flex;
+            justify-content: space-between; /* This ensures the links are spread evenly */
+        }
+        
+        .banner2 nav ul li {
+            margin: 0 100px;
+        }
+        
+        .banner2 nav ul li a {
+            text-decoration: none;
+            color: #004466;
+            font-size: 1.2em;
+        }
+        
+        .banner2 nav ul li a:hover {
+            text-decoration: underline;
+        }
+
+        .uni-image {
+            display: block; /* Centers the image horizontally */
+            margin: 0 auto 20px auto; /* Centers the image horizontally and adds bottom margin */
+            width: 25%; /* Adjusts the width to 50% of the container */
+            height: auto; /* Maintains the aspect ratio */
+            border-radius: 15px; /* Adds rounded corners */
+
+        }
+
+        .container .content-row .content .highlight {
+            font-size: 1.9em; /* Increase the font size */
+            font-weight: bold; /* Make the text bold */
+        }
     </style>
 </head>
 <body>
@@ -86,24 +149,91 @@
     <h1>Our Board of Directors</h1>
 </div>
 
-<div class="content">
-    <p>
-        Dr. Israel Sokeye (Executive Director)
-        Abimbola Olukeye
-        Abiola Shobola
-    <p>
+
+</div>
+<aside class="banner2">
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a  href="board.html">Board of Directors</a></li>
+            <li><a href="partnerships.html">Partnerships</a></li>
+            <li><a href="research.html">Research</a></li>
+            <li><a href="contactus.html">Contact Us</a></li>
+        </ul>
+    </nav>
+</aside>
 </div>
 
-<footer>
-    <div class="footer-links">
-        <a href="website.html">Home</a>
-        <a href="board.html">Board of Directors</a>
-        <a href="partnerships.html">Partnerships</a>
-        <a href="contactus.html">Contact Us</a>
+
+<div class="container">
+    <div class="content-row">
+        <div class="content">
+            <p class="highlight">
+                Dr. Israel Sokeye (Executive Director)<br>
+            </p>
+
+            <p>
+                Dr. Sokeye is a board-certified psychiatrist dedicated to assisting individuals of all ages with mental health issues. He places particular emphasis on treating children and adolescents, believing that early intervention enhances their prospects for a productive and fulfilling adult life. In 2011, he co-founded Plymouth Psych Group to make a significant impact on the mental health care system and to excel in delivering compassionate care.
+            </p>
+
+            <p>
+                Dr. Sokeye graduated from the prestigious University of Ibadan College of Medicine in Nigeria and completed his general adult psychiatry training at Mount Sinai School of Medicine in New York. He further specialized in child and adolescent psychiatry at the University of Minnesota.
+            </p>
+
+            <p>
+                With extensive experience across various clinical settings, including governmental county clinics, school clinics, inpatient units, partial hospitalization programs, intensive outpatient programs, and outpatient clinics, Dr. Sokeye brings a wealth of knowledge to his practice. Additionally, he serves as an adjunct clinical faculty member of psychiatry at the University of Minnesota Medical School, where he is also involved in research and new program development.
+            </p>
+
+        </div>
+        <img src="Sokeye.jpg" class="uni-image" alt="University">
     </div>
-    <div>
-        <a href="#"><img src="linkedin.png" alt="LinkedIn" width="30"></a>
-        <a href="#"><img src="twitter.png" alt="Twitter" width="30"></a>
+</div>
+
+<div class="container">
+    <div class="content-row">
+        <div class="content">
+            <p class="highlight">
+                Abimbola Olukeye
+            </p>
+
+            <p>
+                Abi Olukeye is the founder and CEO of Smart Girls HQ, A learning platform to facilitate STEM career education with a focus on female learners and non-traditional learning spaces. Core offerings include Dear Smart Girl kits, career-focused STEM activity kits for girls and career technical education educational technology offerings for elementary and middle school. Her vision is to create an ecosystem of products that when used together are a powerful catalyst for sustaining long-term engagement in STEM for young girls. 
+            </p>
+
+            <p>
+                Her work has been supported by the National Science Foundation and the Department of Education through the Small Business Innovation Research(SBIR) Awards, the NC Idea Foundation, and the Vela Education Fund. Previously. in her 13-year corporate career, she led global multi-million dollar digital transformation and innovation projects. She has over eighteen years of professional and leadership experience spanning new product development,
+            </p>
+
+            <p>
+                technology commercialization, process improvement and strategy. Abi is the chair of the board of CSEdResearch.org and a past member of the Computer Science K12 Standards Committee for North Carolina. She holds a bachelor’s degree in Computer Science from Virginia Tech and MBA from Indiana University. She and her husband live in Charlotte, NC, and have two young daughters who greatly inspire her work.
+            </p>
+
+            <p class="highlight">
+                Abiola Shobola
+            </p>
+        </div>
+        <img src="Abi.jpeg" class="uni-image" alt="University">
+    </div>
+</div>
+
+
+<footer>
+    <div class="footer-top">
+        <div class="footer-links">
+            <a href="website.html">Home</a>
+            <a href="privacy.html">Privacy Policy</a>
+            <a href="terms.html">Terms & Conditions</a>
+            <a href="accessibility.html">Accessibility Notice</a>
+            <a href="contactus.html">Contact Us</a>
+        </div>
+    </div>
+    <div class="footer-middle">
+        <p>Plymouth Psych Group, Plymouth, MN</p>
+        <p>Phone (appointments): 763-559-1640 ext. 117| Phone (general inquiries): 763-559-1640 ext. 117</p>
+        <p>Address: 9655 Schmidt Lake Road, Suite 150, Plymouth, MN 55442</p>
+    </div>
+    <div class="footer-bottom">
+        <p>© Copyright 2023 </p>   
     </div>
 </footer>
 
